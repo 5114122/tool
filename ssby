@@ -1,0 +1,29 @@
+
+function choose(){
+
+$(".bottom-tool-bar a:first-child")[0].click();
+
+
+setTimeout( function(){
+     //add your code
+
+var info = $(".sys-msg-partner-info").text();
+if(info[5]=="男"){
+	console.log(1);
+	$(".bottom-tool-bar a:first-child").text();
+	$(".bottom-tool-bar a:first-child")[0].click();
+	console.log(2);
+setTimeout(function(){
+	if($(".bottom-tool-bar a:first-child")[0].text=='离开'){
+		$("span.modal-button.modal-button-bold")[0].click();
+		setTimeout(choose(),1000);
+	}
+},500);
+}
+else if(info[5]=="女"){
+
+}
+}, 1 * 1000 );//延迟5000毫米
+}
+
+choose();

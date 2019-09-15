@@ -15,7 +15,7 @@ if(info[5]=="男"){
 	console.log(2);
 setTimeout(function(){
 	if($(".bottom-tool-bar a:first-child")[0].text=='离开'){
-		$("span.modal-button.modal-button-bold")[0].click();
+		$("span.actions-modal-button")[0].click();
 		setTimeout(choose(),1000);
 	}
 },500);
